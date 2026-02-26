@@ -3,320 +3,199 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Haryana Sweets & Fast Food Raipur</title>
+<title>Haryana Sweets Raipur | Best Sweets & Fast Food</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<meta name="description" content="Haryana Sweets Raipur offers traditional Indian sweets, street food, snacks and fast food in Kabir Nagar, Raipur. Order online or WhatsApp now.">
+
+<link rel="icon" href="https://images.unsplash.com/photo-1541976076758-25a71c19c124?auto=format&fit=crop&w=200&q=60">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;scroll-behavior:smooth;}
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#fff8f0;
+text-align:center;
+}
 
-body{background:#fffaf0;color:#333;}
-
+/* HEADER */
 header{
-background:linear-gradient(135deg,#ff8c00,#ff3c00);
+background:linear-gradient(45deg,#8B0000,#ff6600);
 color:white;
-text-align:center;
-padding:60px 20px;
+padding:40px 20px;
 }
 
-.logo{
-width:120px;
-height:120px;
-border-radius:50%;
-background:white;
-display:flex;
-align-items:center;
-justify-content:center;
-margin:auto;
-font-size:22px;
-font-weight:bold;
-color:#ff6a00;
-margin-bottom:15px;
+/* SECTIONS */
+.section{
+padding:50px 20px;
 }
 
-header h1{font-size:32px;margin-bottom:10px;}
-header p{font-size:18px;margin-bottom:20px;}
-
-.btn{
+/* BUTTONS */
+.button{
 display:inline-block;
-padding:12px 25px;
-margin:8px;
-border-radius:30px;
+padding:14px 30px;
+margin:15px;
+background:green;
+color:white;
 text-decoration:none;
-color:white;
-font-weight:500;
-transition:0.3s;
+border-radius:50px;
+font-weight:bold;
 }
 
-.whatsapp{background:#25D366;}
-.call{background:#000;}
-.btn:hover{opacity:0.85;}
-
-section{padding:60px 20px;text-align:center;}
-section h2{margin-bottom:20px;font-size:28px;color:#ff6a00;}
-
-.about p{max-width:700px;margin:auto;line-height:1.7;}
-
-.gallery{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
+.callbtn{
+background:#8B0000;
 }
 
-.gallery img{
-width:280px;
-height:200px;
-object-fit:cover;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-transition:0.3s;
-}
-
-.gallery img:hover{transform:scale(1.05);}
-
-.review-box{
-background:#fff3e0;
-padding:25px;
-border-radius:15px;
-max-width:700px;
-margin:15px auto;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-}
-
-form{
-max-width:500px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:15px;
-}
-
-input, textarea{
-padding:12px;
-border-radius:8px;
-border:1px solid #ccc;
-}
-
-form button{
-background:#ff6a00;
-color:white;
-border:none;
-padding:12px;
-border-radius:25px;
-cursor:pointer;
-}
-
-.map iframe{
-width:100%;
-height:300px;
-border-radius:15px;
-}
-
-footer{
-background:#111;
-color:white;
-padding:20px;
-text-align:center;
-margin-top:40px;
-}
-
-/* Floating WhatsApp */
-.float{
+/* FLOATING WHATSAPP */
+.whatsapp-float{
 position:fixed;
-width:60px;
-height:60px;
 bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
+padding:15px 18px;
 border-radius:50%;
-text-align:center;
-font-size:30px;
-box-shadow:2px 2px 10px rgba(0,0,0,0.3);
-display:flex;
-align-items:center;
-justify-content:center;
+font-size:22px;
 text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
-@media(max-width:600px){
-header h1{font-size:24px;}
-.gallery img{width:100%;}
+/* POPUP */
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.popup-content{
+background:white;
+padding:30px;
+border-radius:20px;
+width:80%;
+max-width:350px;
+}
+
+.close-btn{
+background:red;
+color:white;
+border:none;
+padding:8px 15px;
+margin-top:10px;
+border-radius:10px;
+}
+
+/* ORDER FORM */
+form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+input, select{
+padding:10px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+footer{
+background:#222;
+color:white;
+padding:20px;
 }
 </style>
+
+<script>
+function closePopup(){
+document.getElementById("offerPopup").style.display="none";
+}
+</script>
+
 </head>
 
 <body>
 
-<header>
-<div class="logo">HS</div>
-<h1>Haryana Sweets & Fast Food</h1>
-<p>Raipur | 100% Pure Vegetarian | Fresh & Hygienic</p>
+<!-- FESTIVAL POPUP -->
+<div class="popup" id="offerPopup">
+<div class="popup-content">
+<h3>🎉 Special Offer 🎉</h3>
+<p>Flat 10% OFF on Kaju Katli & Rasgulla!</p>
+<button class="close-btn" onclick="closePopup()">Close</button>
+</div>
+</div>
 
-<a href="https://wa.me/919034415559" class="btn whatsapp">Order on WhatsApp</a>
-<a href="tel:+919034415559" class="btn call">Call Now</a>
+<header>
+<h1>Haryana Sweets Raipur</h1>
+<p>Traditional Mithai | Street Food | Fast Food | 100% Veg</p>
 </header>
 
-<section class="about">
-<h2>About Us</h2>
+<div class="section">
+<h2>Visit Our Shop</h2>
 <p>
-Haryana Sweets & Fast Food is one of the most loved sweet shops in Raipur.
-We serve fresh Rasgulla, Gulab Jamun, Kaju Katli, Samosa, Kachori,
-Chole Bhature and delicious fast food with premium quality.
+Shop 11, Kanchan Jhanga Complex,<br>
+Adarsh Chauk, Kabir Nagar,<br>
+Amanaka, Raipur, Chhattisgarh
 </p>
-</section>
 
-<section>
-<h2>Our Specialties</h2>
-<div class="gallery">
-<img src="https://source.unsplash.com/400x300/?rasgulla">
-<img src="https://source.unsplash.com/400x300/?gulab-jamun">
-<img src="https://source.unsplash.com/400x300/?samosa">
-<img src="https://source.unsplash.com/400x300/?indian-sweets">
+<p><strong>Open Daily:</strong> 8:00 AM – 10:00 PM</p>
+
+<a class="button" href="https://wa.me/919034415559" target="_blank">
+Order on WhatsApp
+</a>
+
+<a class="button callbtn" href="tel:+919034415559">
+Call Now
+</a>
 </div>
-</section>
 
-<section>
-<h2>Customer Reviews</h2>
-<div class="review-box">⭐⭐⭐⭐⭐ “Best sweets in Raipur! Very fresh and tasty.”</div>
-<div class="review-box">⭐⭐⭐⭐⭐ “Chole Bhature is amazing. Highly recommended!”</div>
-</section>
-
-<section>
+<div class="section">
 <h2>Online Order Form</h2>
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="tel" placeholder="Phone Number" required>
-<textarea rows="4" placeholder="Your Order Details"></textarea>
-<button type="submit">Submit Order</button>
-</form>
-</section>
 
-<section class="map">
-<h2>Find Us</h2>
-<iframe src="https://www.google.com/maps?q=Kabir+Nagar+Raipur&output=embed"></iframe>
-</section>
+<form action="https://wa.me/919034415559" method="get" target="_blank">
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Your Phone Number" required>
+
+<select required>
+<option value="">Select Sweet</option>
+<option>Kaju Katli</option>
+<option>Rasgulla</option>
+<option>Gulab Jamun</option>
+<option>Jalebi</option>
+<option>Ras Malai</option>
+</select>
+
+<input type="number" placeholder="Quantity (Kg)" required>
+
+<button class="button" type="submit">Place Order</button>
+</form>
+
+</div>
+
+<div class="section">
+<h2>Find Us on Google Map</h2>
+
+<iframe 
+width="90%" height="300" style="border-radius:20px;border:0;"
+src="https://www.google.com/maps?q=Kanchan+Jhanga+Complex+Adarsh+Chauk+Kabir+Nagar+Raipur&output=embed">
+</iframe>
+
+</div>
 
 <footer>
-© 2026 Haryana Sweets & Fast Food Raipur | All Rights Reserved
+<p>© 2026 Haryana Sweets Raipur</p>
+<p>📞 +91 90344 15559</p>
 </footer>
 
-<a href="https://wa.me/919034415559" class="float">🟢</a>
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp-float" href="https://wa.me/919034415559" target="_blank">
+💬
+</a>
 
 </body>
 </html>
-<section>
-<h2>Our Sweets Collection</h2>
-
-<div class="gallery">
-<img src="https://source.unsplash.com/400x300/?kaju-katli">
-<img src="https://source.unsplash.com/400x300/?rasgulla">
-<img src="https://source.unsplash.com/400x300/?ras-malai">
-<img src="https://source.unsplash.com/400x300/?gulab-jamun">
-<img src="https://source.unsplash.com/400x300/?jalebi">
-<img src="https://source.unsplash.com/400x300/?indian-barfi">
-<img src="https://source.unsplash.com/400x300/?chum-chum-sweet">
-<img src="https://source.unsplash.com/400x300/?paneer-sweet">
-<img src="https://source.unsplash.com/400x300/?gajar-halwa">
-</div>
-
-<div style="margin-top:30px; max-width:800px; margin-left:auto; margin-right:auto;">
-<p><strong>Available Sweets:</strong></p>
-<p>
-Kaju Katli • Kaju Barfi • Pista Barfi • Rasgulla • Ras Malai • Gulab Jamun •
-Chum Chum • Jalebi • Milk Cake • Besan Ladoo • Motichoor Ladoo •
-Paneer Sweets • Kalakand • Gajar Ka Halwa • Soan Papdi • Coconut Barfi •
-Special Festival Sweets
-</p>
-</div>
-
-</section>
-<section>
-<h2>Order on WhatsApp</h2>
-
-<form onsubmit="sendToWhatsApp(); return false;">
-<input type="text" id="name" placeholder="Your Name" required>
-<input type="tel" id="phone" placeholder="Phone Number" required>
-<textarea id="order" rows="4" placeholder="Your Order Details (e.g. 1kg Kaju Katli, 500g Rasgulla)" required></textarea>
-<button type="submit">Place Order</button>
-</form>
-</section>
-
-<script>
-function sendToWhatsApp(){
-var name = document.getElementById("name").value;
-var phone = document.getElementById("phone").value;
-var order = document.getElementById("order").value;
-
-var message = "New Order from Website:%0A%0A"
-+ "Name: " + name + "%0A"
-+ "Phone: " + phone + "%0A"
-+ "Order Details: " + order;
-
-var whatsappURL = "https://wa.me/919034415559?text=" + message;
-
-window.open(whatsappURL, "_blank");
-}
-</script>
-<section>
-<h2>Our Premium Sweets Collection</h2>
-
-<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px;">
-
-<div style="width:220px;text-align:center;">
-<img src="https://source.unsplash.com/400x300/?kaju-katli" style="width:100%;border-radius:15px;">
-<p><strong>Kaju Katli</strong></p>
-</div>
-
-<div style="width:220px;text-align:center;">
-<img src="https://source.unsplash.com/400x300/?rasgulla" style="width:100%;border-radius:15px;">
-<p><strong>Rasgulla</strong></p>
-</div>
-
-<div style="width:220px;text-align:center;">
-<img src="https://source.unsplash.com/400x300/?ras-malai" style="width:100%;border-radius:15px;">
-<p><strong>Ras Malai</strong></p>
-</div>
-
-<div style="width:220px;text-align:center;">
-<img src="https://source.unsplash.com/400x300/?gulab-jamun" style="width:100%;border-radius:15px;">
-<p><strong>Gulab Jamun</strong></p>
-</div>
-
-<div style="width:220px;text-align:center;">
-<img src="https://source.unsplash.com/400x300/?jalebi" style="width:100%;border-radius:15px;">
-<p><strong>Jalebi</strong></p>
-</div>
-
-<div style="width:220px;text-align:center;">
-<img src="https://source.unsplash.com/400x300/?indian-barfi" style="width:100%;border-radius:15px;">
-<p><strong>Barfi</strong></p>
-</div>
-
-<div style="width:220px;text-align:center;">
-<img src="https://source.unsplash.com/400x300/?chum-chum-sweet" style="width:100%;border-radius:15px;">
-<p><strong>Chum Chum</strong></p>
-</div>
-
-<div style="width:220px;text-align:center;">
-<img src="https://source.unsplash.com/400x300/?paneer-sweet" style="width:100%;border-radius:15px;">
-<p><strong>Paneer Sweet</strong></p>
-</div>
-
-<div style="width:220px;text-align:center;">
-<img src="https://source.unsplash.com/400x300/?gajar-halwa" style="width:100%;border-radius:15px;">
-<p><strong>Gajar Ka Halwa</strong></p>
-</div>
-
-</div>
-</section>
-<h2>Our Premium Sweets Collection</h2>
-<div style="width:280px;margin:auto;text-align:center;">
-  <img
-    src="https://images.unsplash.com/photo-1541976076758-25a71c19c124?auto=format&fit=crop&w=800&q=80"
-    alt="Assorted Indian sweets"
-    style="width:100%;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.2);"
-  >
-  <p><strong>Special Assorted Sweets</strong></p>
-</div>

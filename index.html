@@ -3,199 +3,252 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Haryana Sweets Raipur | Best Sweets & Fast Food</title>
+<title>Haryana Sweets Raipur | Best Mithai & Fast Food in Raipur</title>
 
-<meta name="description" content="Haryana Sweets Raipur offers traditional Indian sweets, street food, snacks and fast food in Kabir Nagar, Raipur. Order online or WhatsApp now.">
-
-<link rel="icon" href="https://images.unsplash.com/photo-1541976076758-25a71c19c124?auto=format&fit=crop&w=200&q=60">
+<meta name="description" content="Haryana Sweets Raipur offers traditional Indian sweets, street food, snacks and fast food in Kabir Nagar, Raipur. 100% vegetarian sweets available. Order on WhatsApp now.">
 
 <style>
 body{
 margin:0;
 font-family:Arial, sans-serif;
 background:#fff8f0;
-text-align:center;
+color:#333;
+scroll-behavior:smooth;
 }
 
-/* HEADER */
-header{
-background:linear-gradient(45deg,#8B0000,#ff6600);
+/* HERO */
+.hero{
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=1200&q=60');
+background-size:cover;
+background-position:center;
 color:white;
-padding:40px 20px;
+text-align:center;
+padding:120px 20px;
 }
 
-/* SECTIONS */
-.section{
-padding:50px 20px;
+.hero h1{
+font-size:38px;
+margin:0;
 }
 
-/* BUTTONS */
-.button{
+.hero p{
+font-size:18px;
+margin-top:15px;
+}
+
+.btn{
 display:inline-block;
-padding:14px 30px;
-margin:15px;
-background:green;
+margin-top:20px;
+padding:15px 35px;
+background:#25D366;
 color:white;
 text-decoration:none;
-border-radius:50px;
+border-radius:40px;
 font-weight:bold;
 }
 
-.callbtn{
-background:#8B0000;
+/* SECTION */
+.section{
+padding:60px 20px;
+text-align:center;
 }
 
-/* FLOATING WHATSAPP */
-.whatsapp-float{
+.section h2{
+margin-bottom:20px;
+color:#8B0000;
+}
+
+/* GALLERY */
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.gallery img{
+width:260px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.gallery img:hover{
+transform:scale(1.07);
+}
+
+/* FEATURES */
+.features{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.feature-box{
+background:white;
+padding:25px;
+width:260px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* REVIEWS */
+.reviews{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.review{
+background:white;
+width:260px;
+padding:20px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* MAP */
+iframe{
+width:90%;
+height:350px;
+border-radius:20px;
+border:0;
+}
+
+/* FOOTER */
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+/* FLOAT WHATSAPP */
+.whatsapp{
 position:fixed;
 bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:15px 18px;
+padding:18px;
 border-radius:50%;
-font-size:22px;
+font-size:24px;
 text-decoration:none;
 box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
-
-/* POPUP */
-.popup{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.6);
-display:flex;
-justify-content:center;
-align-items:center;
-}
-
-.popup-content{
-background:white;
-padding:30px;
-border-radius:20px;
-width:80%;
-max-width:350px;
-}
-
-.close-btn{
-background:red;
-color:white;
-border:none;
-padding:8px 15px;
-margin-top:10px;
-border-radius:10px;
-}
-
-/* ORDER FORM */
-form{
-max-width:400px;
-margin:auto;
-display:flex;
-flex-direction:column;
-gap:10px;
-}
-
-input, select{
-padding:10px;
-border-radius:8px;
-border:1px solid #ccc;
-}
-
-footer{
-background:#222;
-color:white;
-padding:20px;
-}
 </style>
-
-<script>
-function closePopup(){
-document.getElementById("offerPopup").style.display="none";
-}
-</script>
-
 </head>
 
 <body>
 
-<!-- FESTIVAL POPUP -->
-<div class="popup" id="offerPopup">
-<div class="popup-content">
-<h3>🎉 Special Offer 🎉</h3>
-<p>Flat 10% OFF on Kaju Katli & Rasgulla!</p>
-<button class="close-btn" onclick="closePopup()">Close</button>
-</div>
-</div>
-
-<header>
+<!-- HERO -->
+<div class="hero">
 <h1>Haryana Sweets Raipur</h1>
-<p>Traditional Mithai | Street Food | Fast Food | 100% Veg</p>
-</header>
+<p>Traditional Indian Mithai | Street Food | Fast Food | 100% Veg</p>
+<a class="btn" href="https://wa.me/919034415559" target="_blank">Order on WhatsApp</a>
+</div>
 
+<!-- ABOUT -->
+<div class="section">
+<h2>About Haryana Sweets</h2>
+<p>
+Haryana Sweets is a trusted sweets and fast-food eatery located at Kabir Nagar, Raipur.
+We offer freshly prepared traditional Indian sweets (Mithai), delicious street-food snacks and refreshing fast food items.
+Our sweets are made with high-quality ingredients ensuring authentic taste and freshness.
+</p>
+</div>
+
+<!-- SWEETS GALLERY -->
+<div class="section">
+<h2>Our Premium Sweets</h2>
+
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=600&q=60">
+<img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=600&q=60">
+<img src="https://images.unsplash.com/photo-1631452180539-96aca7d48617?auto=format&fit=crop&w=600&q=60">
+<img src="https://images.unsplash.com/photo-1617196034738-26c5d59cbb1d?auto=format&fit=crop&w=600&q=60">
+<img src="https://images.unsplash.com/photo-1604908177522-432cc8b2d88b?auto=format&fit=crop&w=600&q=60">
+<img src="https://images.unsplash.com/photo-1622831617339-2f58a8f8eeb5?auto=format&fit=crop&w=600&q=60">
+</div>
+
+</div>
+
+<!-- WHY CHOOSE US -->
+<div class="section">
+<h2>Why Choose Us</h2>
+
+<div class="features">
+<div class="feature-box">
+<h3>100% Vegetarian</h3>
+<p>Pure vegetarian sweets and snacks made fresh daily.</p>
+</div>
+
+<div class="feature-box">
+<h3>Fresh Ingredients</h3>
+<p>We use premium quality ingredients for authentic taste.</p>
+</div>
+
+<div class="feature-box">
+<h3>Affordable Prices</h3>
+<p>Best quality sweets at reasonable rates in Raipur.</p>
+</div>
+
+<div class="feature-box">
+<h3>Fast Service</h3>
+<p>Quick takeaway and easy WhatsApp ordering available.</p>
+</div>
+</div>
+
+</div>
+
+<!-- REVIEWS -->
+<div class="section">
+<h2>Customer Reviews</h2>
+
+<div class="reviews">
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Best Kaju Katli in Raipur. Very fresh and tasty.</p>
+<strong>- Rahul S.</strong>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Clean shop and amazing street food options.</p>
+<strong>- Priya M.</strong>
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐
+<p>Affordable and delicious sweets. Highly recommended!</p>
+<strong>- Amit K.</strong>
+</div>
+</div>
+
+</div>
+
+<!-- LOCATION -->
 <div class="section">
 <h2>Visit Our Shop</h2>
 <p>
 Shop 11, Kanchan Jhanga Complex,<br>
 Adarsh Chauk, Kabir Nagar,<br>
-Amanaka, Raipur, Chhattisgarh
+Amanaka, Raipur, Chhattisgarh<br><br>
+Open Daily: 8:00 AM – 10:00 PM<br>
+📞 +91 90344 15559
 </p>
 
-<p><strong>Open Daily:</strong> 8:00 AM – 10:00 PM</p>
-
-<a class="button" href="https://wa.me/919034415559" target="_blank">
-Order on WhatsApp
-</a>
-
-<a class="button callbtn" href="tel:+919034415559">
-Call Now
-</a>
-</div>
-
-<div class="section">
-<h2>Online Order Form</h2>
-
-<form action="https://wa.me/919034415559" method="get" target="_blank">
-<input type="text" placeholder="Your Name" required>
-<input type="tel" placeholder="Your Phone Number" required>
-
-<select required>
-<option value="">Select Sweet</option>
-<option>Kaju Katli</option>
-<option>Rasgulla</option>
-<option>Gulab Jamun</option>
-<option>Jalebi</option>
-<option>Ras Malai</option>
-</select>
-
-<input type="number" placeholder="Quantity (Kg)" required>
-
-<button class="button" type="submit">Place Order</button>
-</form>
-
-</div>
-
-<div class="section">
-<h2>Find Us on Google Map</h2>
-
-<iframe 
-width="90%" height="300" style="border-radius:20px;border:0;"
-src="https://www.google.com/maps?q=Kanchan+Jhanga+Complex+Adarsh+Chauk+Kabir+Nagar+Raipur&output=embed">
-</iframe>
-
+<iframe src="https://www.google.com/maps?q=Kanchan+Jhanga+Complex+Adarsh+Chauk+Kabir+Nagar+Raipur&output=embed"></iframe>
 </div>
 
 <footer>
-<p>© 2026 Haryana Sweets Raipur</p>
-<p>📞 +91 90344 15559</p>
+© 2026 Haryana Sweets Raipur | All Rights Reserved
 </footer>
 
-<!-- FLOATING WHATSAPP -->
-<a class="whatsapp-float" href="https://wa.me/919034415559" target="_blank">
-💬
-</a>
+<a class="whatsapp" href="https://wa.me/919034415559" target="_blank">💬</a>
 
 </body>
 </html>

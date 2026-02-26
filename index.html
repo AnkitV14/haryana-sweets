@@ -206,3 +206,56 @@ Chole Bhature and delicious fast food with premium quality.
 
 </body>
 </html>
+<section>
+<h2>Our Sweets Collection</h2>
+
+<div class="gallery">
+<img src="https://source.unsplash.com/400x300/?kaju-katli">
+<img src="https://source.unsplash.com/400x300/?rasgulla">
+<img src="https://source.unsplash.com/400x300/?ras-malai">
+<img src="https://source.unsplash.com/400x300/?gulab-jamun">
+<img src="https://source.unsplash.com/400x300/?jalebi">
+<img src="https://source.unsplash.com/400x300/?indian-barfi">
+<img src="https://source.unsplash.com/400x300/?chum-chum-sweet">
+<img src="https://source.unsplash.com/400x300/?paneer-sweet">
+<img src="https://source.unsplash.com/400x300/?gajar-halwa">
+</div>
+
+<div style="margin-top:30px; max-width:800px; margin-left:auto; margin-right:auto;">
+<p><strong>Available Sweets:</strong></p>
+<p>
+Kaju Katli • Kaju Barfi • Pista Barfi • Rasgulla • Ras Malai • Gulab Jamun •
+Chum Chum • Jalebi • Milk Cake • Besan Ladoo • Motichoor Ladoo •
+Paneer Sweets • Kalakand • Gajar Ka Halwa • Soan Papdi • Coconut Barfi •
+Special Festival Sweets
+</p>
+</div>
+
+</section>
+<section>
+<h2>Order on WhatsApp</h2>
+
+<form onsubmit="sendToWhatsApp(); return false;">
+<input type="text" id="name" placeholder="Your Name" required>
+<input type="tel" id="phone" placeholder="Phone Number" required>
+<textarea id="order" rows="4" placeholder="Your Order Details (e.g. 1kg Kaju Katli, 500g Rasgulla)" required></textarea>
+<button type="submit">Place Order</button>
+</form>
+</section>
+
+<script>
+function sendToWhatsApp(){
+var name = document.getElementById("name").value;
+var phone = document.getElementById("phone").value;
+var order = document.getElementById("order").value;
+
+var message = "New Order from Website:%0A%0A"
++ "Name: " + name + "%0A"
++ "Phone: " + phone + "%0A"
++ "Order Details: " + order;
+
+var whatsappURL = "https://wa.me/919034415559?text=" + message;
+
+window.open(whatsappURL, "_blank");
+}
+</script>
